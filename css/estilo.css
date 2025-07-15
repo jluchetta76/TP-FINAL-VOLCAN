@@ -1,0 +1,527 @@
+/* ---------------------------------------------- Normalizado ----------------------------------------------------- */
+
+/*inizialización de la pantalla*/
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/*letras_google_utilizadas*/ 
+
+.poetsen-one-regular {
+
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/*header común para todos los html*/
+
+.header_normalizado {
+
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+
+  position:sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+
+  background-color:blue;
+  box-shadow: 5px 10px 5px black;
+
+}
+
+.contenedor_header_normalizado {
+
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 2%;
+  gap:2%
+  
+}
+
+.item_logo_header_normalizado {
+
+  width: 25%;
+  min-width: 50px; 
+  border-style: solid;
+  border-color: white;
+}
+
+.item_menu_header_normalizado {
+
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+
+}
+
+.nav_list_normalizado { 
+    
+  display:flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  gap: 25px;
+   
+}
+
+.nav_list_normalizado li a {
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color:white;
+  text-decoration: none;
+
+}
+
+.nav_list_normalizado li a:hover {
+
+  transition: transform 0.5 s ease-in-out;
+  color: red;
+ 
+}
+
+.item_carrito_header_normalizado {
+
+  width: 4%;
+  min-width: 40px;
+  margin-right: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+
+}
+
+.footer_normalizado {
+
+  grid-column: 1 / 3;  
+  grid-row: 3 / 4;
+  width: 100%;
+  background-color:blue;
+  box-shadow: 5px -10px 5px black;
+
+}
+
+.contenedor_footer_normalizado {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1%;
+
+}
+
+.item_logo_facebook_normalizado {
+
+  width: 7%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+
+}
+
+.item_logo_instagram_normalizado {
+
+  width: 7%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+
+}
+
+.item_leyenda_normalizado {
+
+  width: 70%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: white;
+
+}
+
+/*Enlaces Normalizados*/
+
+a {
+   
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color:white;
+
+}
+
+a:hover {
+
+  transition: transform 0.5 s ease-in-out;
+  color: red;
+
+}
+
+/*Boton normalizado*/
+
+.boton_normalizado {
+
+  background-color: red;
+
+}
+
+.boton_normalizado:hover {
+
+  transition:  transform 0,5 s ease-in-out;
+  background-color: green;
+
+}
+
+/*------------------------------- INDEX ----------------------------------*/
+
+.grilla_index {
+
+  display: grid;
+  grid-template-columns: repeat (auto-fill, minmax (200px, 1fr)); 
+  grid-template-rows:  auto 1fr auto;
+  place-items: center;
+  background-image: url(../imagenes/fondo-de-pantalla.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+
+}
+
+.main_index {
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+
+}
+
+.contenedor_main_index {
+
+  justify-content:center ;
+  align-items:center ;
+
+}
+
+/*Carrousel de imagenes*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+
+/*------------------------------ NOSOTROS --------------------------------*/
+
+.grilla_nosotros {
+
+  display: grid;
+  grid-template-columns: repeat (auto-fill, minmax (200px, 1fr));
+  grid-template-rows:  auto 1fr auto;
+  place-items: center;
+  background-image: url(../imagenes/erupcion.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+
+}
+
+.main_nosotros {
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content:space-between;
+  gap: 4%;
+
+}
+
+.texto_historia_nosotros {
+
+  grid-column: 1 / 2;
+
+  width: 80%;
+  padding: 2%;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight:500;
+  color: black;
+
+  box-shadow: 5px 0px 5px black;
+
+}
+
+.video_nosotros {
+
+  grid-column: 2 / 3;
+  padding-top: 4%;
+
+}
+
+/*------------------------------ PRODUCTOS -------------------------------*/
+
+.grilla_productos {
+
+  display: grid;
+  grid-template-columns: repeat (auto-fill, minmax (200px, 1fr)); 
+  grid-template-rows:  auto 1fr auto;
+  place-items: center;
+
+}
+
+.main_productos {
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  padding:3%;
+  
+}
+
+/*------------------------------ RESEÑA -------------------------------*/
+
+.grilla_reseña {
+
+  display: grid;
+  grid-template-columns: repeat (auto-fill, minmax (200px, 1fr));
+  grid-template-rows:  auto 1fr auto;
+  place-items: center;
+
+}
+
+.main_reseña {
+
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 100%;
+
+}
+
+.contenedor_main_reseña {
+
+  display: flex;
+  flex-wrap:row;
+  justify-content:center;
+  align-items: center;
+  padding: 3%; 
+  gap: 20%;
+
+}
+
+
+/*------------------------------ CONTACTO --------------------------------*/
+
+.grilla_contacto {
+
+  display: grid;
+  grid-template-columns: repeat (auto-fill, minmax (200px, 1fr)); 
+  grid-template-rows:  auto 1fr auto;
+  place-items: center;
+
+}
+
+.main_contacto {
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/fondo-de-pantalla.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+
+
+}
+
+.contenedor_main_contacto {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  padding: 5%;
+  gap: 5%;
+  
+}
+
+.formulario_contacto {
+
+  width:30%;
+  
+}
+
+.texto_contacto {
+
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:200;
+  color: black;
+
+  background-color: yellow;
+  box-shadow: 5px 10px 5px black;
+  width:30%;
+
+}
+
+/*------------------------------------- UBICACION -------------------------------------*/
+
+.grilla_ubicacion {
+
+  display: grid;
+  grid-template-columns: repeat (auto-fill, minmax (200px, 1fr)); 
+  grid-template-rows:  auto 1fr auto;
+  place-items:center;
+
+
+}
+
+.main_ubicacion {
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/fondo-de-pantalla.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+
+}
+
+.contenedor_main_ubicacion {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+
+}
+
+.googlemap_ubicacion {
+
+  grid-column: 1 / 3;
+  width: auto;
+  box-shadow: 5px 10px 5px black;
+
+}
+
+/*Adaptacion de pantalla x tamaño*/
+
+
+/*Móviles (hasta 600px)*/
+
+@media only screen and (max-width: 600px) { 
+
+  body {
+
+    font-size: 10px;
+
+  }
+
+} 
+
+/* Móviles (hasta 767px) */
+
+@media (max-width: 767px) {
+
+  body { 
+
+    font-size: 10px;
+    grid-template-columns: 1fr; 
+
+  }
+
+}
+
+/* Tablets (768px a 1279px) */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+  body { 
+    
+    font-size: 16px;
+     
+  } 
+
+  .grilla {
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+
+/* Escritorios estándar (1280px a 1599px) */
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+ 
+  body { 
+      
+    font-size: 18px;
+      
+  }
+
+}
+
+/* Pantallas grandes (1600px en adelante) */
+
+@media (min-width: 1600px) {
+
+  body { 
+      
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  
+}
+
+

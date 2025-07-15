@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>VOLCAN - PRODUCTOS</title>
+
+    <link rel="icon" href="./imagenes/logo_volcan_ch.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css"/>
+
+</head>
+
+<body>
+
+    <div class="grilla_productos">
+
+        <header class= "header_normalizado">
+
+            <div class="contenedor_header_normalizado">
+
+                <div class="item_logo_header_normalizado">
+
+                    <img src="./imagenes/logo_volcan.jpg" alt="Logo de VOLCAN" width="100%">
+
+                </div>
+
+                <div class="item_menu_header_normalizado">
+
+                    <nav>
+
+                        <ul class="nav_list_normalizado">
+                
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./nosotros.html">Nosotros</a></li>
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="./resenia.html">Reseñas</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                            <li><a href="./ubicacion.html">Ubicación</a></li>
+
+                        </ul>
+                        
+                    </nav>
+            
+                </div>
+
+                <div class="item_carrito_header_normalizado">
+
+                    <img src="./imagenes/carrito.png" alt="carrito de compras" width="100%">
+                    <a href=""></a>
+                    
+                </div>
+
+            </div>
+
+        </header>
+
+        <main class="main_productos">
+
+                <div class="container">
+
+                    <h2>PRODUCTOS DISPONIBLES</h2>
+
+                    <br>
+
+                    <div class="row">
+
+                        <!-- Elementos generados a partir del JSON -->
+
+                        <main id="items" class="col-sm-8 row"></main>
+
+                        <!-- Carrito -->
+
+                        <aside class="col-sm-4">
+
+                            <h2>Carrito</h2>
+                            <ul id="carrito" class="list-group"></ul>
+                            <hr>
+                            <p class="text-right">Total $: <span id="total"></span>;</p>
+                            <button id="boton-pagar" class="btn btn-primary mt-3">Pagar</button>
+                            <button id="boton-vaciar" class="btn btn-danger mt-3">Vaciar</button>
+                            
+                        </aside>
+
+                    </div>
+
+                </div>
+
+        </main>
+
+        <footer class="footer_normalizado">
+
+            <div class="contenedor_footer_normalizado">
+
+                <div class="item_logo_facebook_normalizado">
+                    
+                    <img src="./imagenes/facebook.png" alt="Icono facebook" width="50%">
+                    <a href="https://www.facebook.com/volcanargentina"><br>Facebook</a>
+
+                </div>
+
+                <div class="item_logo_instagram_normalizado">
+
+                    <img src="./imagenes/instagram.png" alt="Icono instagram" width="50%">
+                    <a href="https://www.instagram.com/volcanargentina/"><br>Instagram</a>
+
+                </div>
+                
+                <div class="item_leyenda_normalizado">
+
+                    <p> Esta es una página web de aprendizaje, las imagenes y videos utilizados pertenecen a sus respectivos autores.</p>
+
+                </div>
+
+            </div> 
+
+        </footer>
+    
+    </div>
+
+    <script src="./js/carrito.js"></script>
+
+</body>
+</html>
